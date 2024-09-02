@@ -1,0 +1,34 @@
+public class StringFunctionsDemo {
+    public static void main(String[] args) {
+        String str = "Java";
+
+        // Concatenation
+        String concatenatedStr = str.concat("Welcome");
+        System.out.println("Concatenated String: " + concatenatedStr);
+
+        // Character at index 1
+        char charAtIndex1 = str.charAt(1);
+        System.out.println("Character at index 1: " + charAtIndex1);
+
+        // Index of first 'a'
+        int indexOfFirstA = str.indexOf('a');
+        System.out.println("Index of first 'a': " + indexOfFirstA);
+
+        // Index of second 'a'
+        int indexOfSecondA = str.indexOf('a', indexOfFirstA + 1);
+        System.out.println("Index of second 'a': " + indexOfSecondA);
+
+        // String comparison
+        String str2 = "JAVA";
+        int comparisonResult = str.compareTo(str2);
+        System.out.println("Comparison of 'Java' and 'JAVA': " + comparisonResult);
+
+        // String comparison ignoring case
+        int comparisonResultIgnoreCase = str.compareToIgnoreCase(str2);
+        System.out.println("Comparison of 'Java' and 'JAVA' (Ignoring case): " + comparisonResultIgnoreCase);
+
+        // Index of first 'a' from last
+        int lastIndexOfA = str.lastIndexOf('a');
+        System.out.println("Index of first 'a' from last: " + lastIndexOfA);
+    }
+}
